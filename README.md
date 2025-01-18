@@ -29,7 +29,7 @@
       <!-- 오완진 -->
       <td>문제 1</td>
       <!-- 유하람 -->
-      <td>문제 1</td>
+      <td><a href="https://github.com/Ryuharam/APS/tree/main/%EB%B0%B1%EC%A4%80/Bronze/2775.%E2%80%85%EB%B6%80%EB%85%80%ED%9A%8C%EC%9E%A5%EC%9D%B4%E2%80%85%EB%90%A0%ED%85%8C%EC%95%BC">문제 1</td>
       <!-- 이승연 -->
       <td>문제 1</td>
     </tr>
