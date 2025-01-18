@@ -51,7 +51,7 @@
       <td>문제 1</td>
       <td>문제 1</td>
       <td>문제 1</td>
-      <td><a href="백준/Bronze/18108. 1998년생인 내가 태국에서는 2541년생？！">1998년생인 내가 태국에서는 2541년생?</a></td>
+      <td><a href="[백준/Bronze/18108. 1998년생인 내가 태국에서는 2541년생？！](https://github.com/Ryuharam/APS/tree/main/%EB%B0%B1%EC%A4%80/Bronze/18108.%E2%80%851998%EB%85%84%EC%83%9D%EC%9D%B8%E2%80%85%EB%82%B4%EA%B0%80%E2%80%85%ED%83%9C%EA%B5%AD%EC%97%90%EC%84%9C%EB%8A%94%E2%80%852541%EB%85%84%EC%83%9D%EF%BC%9F%EF%BC%81)">1998년생인 내가 태국에서는 2541년생?</a></td>
       <td>문제 1</td>
     </tr>
     <tr>
