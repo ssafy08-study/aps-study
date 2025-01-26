@@ -1,0 +1,85 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Stack;
+import java.util.StringTokenizer;
+
+public class Main{
+	
+    public static void main(String[] args) throws Exception{
+    
+    	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    	StringBuilder sb = new StringBuilder();
+    	
+    	// 쿼리의 수 : N
+    	// 나누는 정수 : mod
+    	String s = br.readLine();
+    	StringTokenizer st = new StringTokenizer(s);
+    	
+    	int N = Integer.parseInt(st.nextToken());
+    	int mod = Integer.parseInt(st.nextToken());
+    	
+    	// 수열
+    	Stack<Integer> arr = new Stack<>();
+    	
+    	// 확인 배열
+    	boolean[] check = new boolean[mod]; 
+    	
+    	// 쿼리 입력
+    	for(int i=0 ; i<N ; i++) {
+    		
+    		String s2 = br.readLine();
+    		StringTokenizer st2 = new StringTokenizer(s2);
+    		
+    		int oper = Integer.parseInt(st2.nextToken());
+    		
+    		if(oper==1) 
+    		{
+    			int num = Integer.parseInt(st2.nextToken());
+    			arr.push(num);
+    			check[num%mod] = true;
+    
+    		}
+    		else if(oper==2) 
+    		{
+    			if(!arr.isEmpty()) {
+    				int num = arr.pop();
+    				check[num%mod] = true;
+    			}
+    		}
+    		else 
+    		{
+    			if(isAllTrue(check)) {
+    				int cnt = 0;
+    				sb.append(cnt).append("\n");
+    			}
+    			else 
+    			{
+    				sb.append(-1).append("\n");
+    			}
+    		}
+    		
+    	}
+    	
+    	String ans = sb.toString();
+    	System.out.println(ans);
+    	
+    }
+    
+    static boolean isAllTrue (boolean[] check) {
+    	for(boolean b : check) {
+    		if(!b)
+    			return false;
+    	}
+    	return true;
+    }
+    
+    static boolean isAllFalse(boolean[] check) {
+    	for(boolean b : check) {
+    		if(b)
+    			return false;
+    	}
+    	return true;
+    }
+    
+    
+}

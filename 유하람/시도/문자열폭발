@@ -1,0 +1,53 @@
+// bomb의 시작점이 아니라 끝 점을 확인해서 역으로 확인
+// list나 stack 활용
+// 배열을 쓰고 size(포인터?)를 체크해서 폭발 시 덮어쓰는 방법도 있음
+
+
+
+
+
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Stack;
+
+public class 문자열폭발 {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		String str = br.readLine();
+		String bomb = br.readLine();
+		
+		char[] bombs = new char[bomb.length()];
+		
+		for(int i=0 ; i<bomb.length() ; i++) {
+			bombs[i] = bomb.charAt(i);
+		}
+		
+		Stack<Character> stack = new Stack<>();
+		
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i=0 ; i<str.length() ; i++) {
+			char c = str.charAt(i);
+			if(c==bombs[0]) {
+				stack.push(c);
+			}
+			
+		}
+		
+		String answer = sb.toString();
+		bw.write(answer);
+		bw.flush();
+		bw.close();
+		br.close();
+	}
+
+
+
+}

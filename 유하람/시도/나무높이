@@ -1,0 +1,43 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
+
+public class 나무높이 {
+/*
+ *  1. 홀수 짝수 구분해서 꼭 홀수날 줘야하는 경우 판단
+ *  2. 짝수 날짜가 홀수 날짜보다 너무 많으면 홀수로 나눠서 주기	
+ */
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringBuilder sb = new StringBuilder();
+		
+		String t = br.readLine();
+		int T = Integer.parseInt(t);
+		
+		for(int tc=1 ; tc<=T ; tc++) {
+			
+			String n = br.readLine();
+			int N = Integer.parseInt(n);
+			
+			int[] tree = new int[N];
+			
+			String s = br.readLine();
+			StringTokenizer st = new StringTokenizer(s);
+			
+			for(int i=0 ; i<N ; i++) {
+				tree[i] = Integer.parseInt(st.nextToken());
+			}
+			
+			
+		}
+		
+		
+	}
+
+
+}
