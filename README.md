@@ -11,6 +11,11 @@
 - 문제 2 : [숨바꼭질 3](https://www.acmicpc.net/problem/13549)
 - 문제 3 : [A와 B 2](https://www.acmicpc.net/problem/12919)
 
+## 1월 4주차 문제
+- 문제 1 : [컨베이어 벨트 위의 로봇](https://www.acmicpc.net/problem/20055)
+- 문제 2 : [뱀과 사다리 게](https://www.acmicpc.net/problem/16928)
+- 문제 3 : [문자열 게임](https://www.acmicpc.net/problem/20437)
+
 <hr>
 
 ## 1월 문제 기록
