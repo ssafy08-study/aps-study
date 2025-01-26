@@ -34,7 +34,7 @@
       <!-- 문세희 -->
       <td><a href="https://github.com/ssafy08-study/aps-study/blob/main/%EB%AC%B8%EC%84%B8%ED%9D%AC/%EB%B0%B1%EC%A4%80/Gold/15989.%E2%80%851%EF%BC%8C%E2%80%852%EF%BC%8C%E2%80%853%E2%80%85%EB%8D%94%ED%95%98%EA%B8%B0%E2%80%854/1%EF%BC%8C%E2%80%852%EF%BC%8C%E2%80%853%E2%80%85%EB%8D%94%ED%95%98%EA%B8%B0%E2%80%854.java">문제 1</a></td>
       <!-- 오완진 -->
-      <td>문제 1</td>
+      <td><a href="https://github.com/ssafy-12-seoul-8/SWEET_POTATOES/tree/main/%EC%98%A4%EC%99%84%EC%A7%84/%EB%B0%B1%EC%A4%80/Gold/15989.%E2%80%851%EF%BC%8C%E2%80%852%EF%BC%8C%E2%80%853%E2%80%85%EB%8D%94%ED%95%98%EA%B8%B0%E2%80%854">문제 1</td>
       <!-- 유하람 -->
       <td>문제 1</td>
       <!-- 이승연 -->
@@ -46,7 +46,7 @@
       <!-- 문세희 -->
       <td><a href="https://github.com/ssafy08-study/aps-study/blob/main/%EB%AC%B8%EC%84%B8%ED%9D%AC/%EB%B0%B1%EC%A4%80/Gold/13549.%E2%80%85%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%88%E2%80%853/%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%88%E2%80%853.java">문제 2<a></td>
       <!-- 오완진 -->
-      <td>문제 2</td>
+      <td><a href="https://github.com/ssafy-12-seoul-8/SWEET_POTATOES/tree/main/%EC%98%A4%EC%99%84%EC%A7%84/%EB%B0%B1%EC%A4%80/Gold/12919.%E2%80%85A%EC%99%80%E2%80%85B%E2%80%852">문제 2</td>
       <!-- 유하람 -->
       <td>문제 2</td>
       <!-- 이승연 -->
@@ -58,7 +58,7 @@
       <!-- 문세희 -->
       <td><a href="https://github.com/ssafy08-study/aps-study/blob/main/%EB%AC%B8%EC%84%B8%ED%9D%AC/%EB%B0%B1%EC%A4%80/Gold/15989.%E2%80%851%EF%BC%8C%E2%80%852%EF%BC%8C%E2%80%853%E2%80%85%EB%8D%94%ED%95%98%EA%B8%B0%E2%80%854/1%EF%BC%8C%E2%80%852%EF%BC%8C%E2%80%853%E2%80%85%EB%8D%94%ED%95%98%EA%B8%B0%E2%80%854.java">문제 3</a></td>
       <!-- 오완진 -->
-      <td>문제 3</td>
+      <td><a href="https://github.com/ssafy-12-seoul-8/SWEET_POTATOES/tree/main/%EC%98%A4%EC%99%84%EC%A7%84/%EB%B0%B1%EC%A4%80/Gold/13549.%E2%80%85%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%88%E2%80%853">문제 3</td>
       <!-- 유하람 -->
       <td>문제 3</td>
       <!-- 이승연 -->
