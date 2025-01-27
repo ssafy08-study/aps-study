@@ -53,7 +53,7 @@
       <!-- 오완진 -->
       <td><a href="https://github.com/ssafy-12-seoul-8/SWEET_POTATOES/tree/main/%EC%98%A4%EC%99%84%EC%A7%84/%EB%B0%B1%EC%A4%80/Gold/12919.%E2%80%85A%EC%99%80%E2%80%85B%E2%80%852">문제 2</td>
       <!-- 유하람 -->
-      <td>문제 2</td>
+      <td><a href="유하람/백준/Gold/13549. 숨바꼭질 3">숨바꼭질 3</td>
       <!-- 이승연 -->
       <td>문제 2</td>
     </tr>
