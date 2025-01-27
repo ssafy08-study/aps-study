@@ -41,7 +41,7 @@
       <!-- 오완진 -->
       <td><a href="https://github.com/ssafy-12-seoul-8/SWEET_POTATOES/tree/main/%EC%98%A4%EC%99%84%EC%A7%84/%EB%B0%B1%EC%A4%80/Gold/15989.%E2%80%851%EF%BC%8C%E2%80%852%EF%BC%8C%E2%80%853%E2%80%85%EB%8D%94%ED%95%98%EA%B8%B0%E2%80%854">문제 1</td>
       <!-- 유하람 -->
-      <td><a href="https://github.com/Ryuharam/APS/tree/main/%EB%B0%B1%EC%A4%80/Gold/15989.%E2%80%851%EF%BC%8C%E2%80%852%EF%BC%8C%E2%80%853%E2%80%85%EB%8D%94%ED%95%98%EA%B8%B0%E2%80%854">문제 1</td>
+      <td><a href="유하람/백준/Gold/15989. 1， 2， 3 더하기 4">1,2,3 더하기 4</td>
       <!-- 이승연 -->
       <td>문제 1</td>
     </tr>
