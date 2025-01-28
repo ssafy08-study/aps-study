@@ -65,7 +65,7 @@
       <!-- 오완진 -->
       <td><a href="https://github.com/ssafy-12-seoul-8/SWEET_POTATOES/tree/main/%EC%98%A4%EC%99%84%EC%A7%84/%EB%B0%B1%EC%A4%80/Gold/13549.%E2%80%85%EC%88%A8%EB%B0%94%EA%BC%AD%EC%A7%88%E2%80%853">문제 3</td>
       <!-- 유하람 -->
-      <td>문제 3</td>
+      <td><a href="유하람/백준/Gold/12919. A와 B 2">A와 B 2</td>
       <!-- 이승연 -->
       <td>문제 3</td>
     </tr>
