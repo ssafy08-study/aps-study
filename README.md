@@ -16,6 +16,11 @@
 - 문제 2 : [뱀과 사다리 게임](https://www.acmicpc.net/problem/16928)
 - 문제 3 : [문자열 게임](https://www.acmicpc.net/problem/20437)
 
+## 2월 1주차 문제
+- 문제 1 : [탑](https://www.acmicpc.net/problem/2493)
+- 문제 2 : [빗물](https://www.acmicpc.net/problem/14719)
+- 문제 3 : [택배배송](https://www.acmicpc.net/problem/5972)
+
 <hr>
 
 ## 1월 문제 기록
