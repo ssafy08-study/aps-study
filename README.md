@@ -20,5 +20,9 @@
 - 문제 2 : [빗물](https://www.acmicpc.net/problem/14719)
 - 문제 3 : [택배배송](https://www.acmicpc.net/problem/5972)
 
+## 2월 4주차 문제
+- 문제 1 : [틱택토](https://www.acmicpc.net/problem/7682)
+- 문제 2 : [숫자고르기](https://www.acmicpc.net/problem/2668)
+
 <hr>
 
