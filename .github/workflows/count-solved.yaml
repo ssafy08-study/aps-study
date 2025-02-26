@@ -1,0 +1,68 @@
+name: Count Weekly Solved Problems
+on:
+  schedule:
+    - cron: '0 15 * * 0'  # 한국 시간 월요일 00:00 (UTC 일요일 15:00)
+
+jobs:
+  count-problems:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+      
+      - name: Count problems and update COUNT.md
+        run: |
+          # UTC 기준으로 작업하되, 날짜 계산을 한국 시간에 맞춤
+          # 지난 주 월요일 00:00:00 (한국 시간)
+          start_date=$(date -d "last monday -9 hours" +%Y-%m-%d)
+          # 오늘 (월요일) 00:00 전 = 일요일까지
+          end_date=$(date -d "today -9 hours" +%Y-%m-%d)
+          
+          week_title=$(date -d "last monday -9 hours" +"%Y년 %-m월 %-d일")
+          date_range="(${start_date} ~ $(date -d "yesterday -9 hours" +%Y-%m-%d))"
+          
+          count_files() {
+            local folder=$1
+            local count=$(git log --since="${start_date}" --until="${end_date}" --pretty=format: --name-only -- "${folder}/*" | grep -E "\.(java|py|js)$" | sort -u | wc -l)
+            echo $count
+          }
+          
+          yhr_count=$(count_files "유하람")
+          khb_count=$(count_files "김햇빛")
+          lsy_count=$(count_files "이승연")
+          owj_count=$(count_files "오완진")
+          msh_count=$(count_files "문세희")
+          
+          if [ -f COUNT.md ]; then
+            cat COUNT.md > temp.md
+          fi
+          
+          {
+            echo "# ${week_title} 문제 풀이 현황 ${date_range}"
+            echo "* 유하람: ${yhr_count}개"
+            echo "* 김햇빛: ${khb_count}개"
+            echo "* 이승연: ${lsy_count}개"
+            echo "* 오완진: ${owj_count}개"
+            echo "* 문세희: ${msh_count}개"
+            echo
+            echo "--"
+            echo
+          } > COUNT.md
+          
+          if [ -f temp.md ]; then
+            cat temp.md >> COUNT.md
+            rm temp.md
+          fi
+          
+          git config --global user.name "shmm0320"
+          git config --global user.email "shmm0320@gmail.com"
+          
+          git add COUNT.md
+          if git diff --staged --quiet; then
+            echo "No changes"
+            exit 0
+          else
+            git commit -m "Update weekly problem count"
+            git push origin main
+          fi
