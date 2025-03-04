@@ -24,5 +24,9 @@
 - 문제 1 : [틱택토](https://www.acmicpc.net/problem/7682)
 - 문제 2 : [숫자고르기](https://www.acmicpc.net/problem/2668)
 
+## 3월 1주차 문제
+- 문제 1 : [빌런호석](https://www.acmicpc.net/problem/22251)
+- 문제 2 : [0만들기](https://www.acmicpc.net/problem/7490)
+
 <hr>
 
