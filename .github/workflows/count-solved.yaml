@@ -10,13 +10,14 @@ jobs:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-      
+          fetch-depth: 0  # 전체 커밋 이력을 가져오기
+
+      - name: Fetch all history
+        run: git fetch --all  # 미러링된 변경 사항 반영
+
       - name: Count problems and update COUNT.md
         run: |
-          # UTC 기준으로 작업하되, 날짜 계산을 한국 시간에 맞춤
-          # 지난 주 월요일 00:00:00 (한국 시간)
           start_date=$(date -d "last monday -9 hours" +%Y-%m-%d)
-          # 오늘 (월요일) 00:00 전 = 일요일까지
           end_date=$(date -d "today -9 hours" +%Y-%m-%d)
           
           week_title=$(date -d "last monday -9 hours" +"%Y년 %-m월 %-d일")
@@ -24,16 +25,17 @@ jobs:
           
           count_files() {
             local folder=$1
-            local count=$(git log --since="${start_date}" --until="${end_date}" --pretty=format: --name-only -- "${folder}/*" | grep -E "\.(java|py|js)$" | sort -u | wc -l)
+            # git log 대신 git diff 사용하여 변경 사항 확인
+            local count=$(git diff --name-only $(git rev-list -n 1 --before="${start_date} 00:00:00" HEAD) HEAD -- "${folder}/*" | grep -E "\.(java|py|js)$" | sort -u | wc -l)
             echo $count
           }
-          
+
           yhr_count=$(count_files "유하람")
           khb_count=$(count_files "김햇빛")
           lsy_count=$(count_files "이승연")
           owj_count=$(count_files "오완진")
           msh_count=$(count_files "문세희")
-          
+
           if [ -f COUNT.md ]; then
             cat COUNT.md > temp.md
           fi
